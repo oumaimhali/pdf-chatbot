@@ -144,7 +144,7 @@ def main():
         with col1:
             st.info(f"PDF sélectionné : {uploaded_file.name}")
         with col2:
-            if st.button "":
+            if st.button("Traiter le PDF"):
                 with st.spinner("Traitement du PDF en cours..."):
                     chatbot = PDFChatbot(pdf_content=uploaded_file.getvalue())
                     chatbot.process_pdf()
